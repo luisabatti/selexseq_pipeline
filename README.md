@@ -58,4 +58,4 @@ This pipeline will generate the following file types:
 
 
 ## Credits
-Written by Luis Abatti
+Written by Luis Abatti based on the [eme_selex package](https://eme-selex.readthedocs.io/en/latest/workflow.html)
