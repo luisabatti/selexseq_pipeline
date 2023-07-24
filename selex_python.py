@@ -157,8 +157,6 @@ for k in kmer_list:
 
         return melt_mean
 
-    #melt_fractions_mean = melt_df(fractions_df)
-
     melt_fold_change_mean = melt_df(fold_change_df)
 
     # Creates a folder and export a .csv table with the results for each protein
@@ -180,7 +178,7 @@ for k in kmer_list:
 
         print(f"Exported dataframe with {selex_run[0]} and {selex_run[1]}")
 
-print('Running R script to generate motif logos')
+print('Running R script to generate motif logos...')
 
 subprocess.call(["Rscript", "./selex_motifLogo.R", "--input_file", input_file, "--output_folder", output_folder, "--kmer_min", kmer_min, "--kmer_max", kmer_max, "--align_mode", align_mode])
 
