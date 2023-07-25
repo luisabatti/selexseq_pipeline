@@ -121,6 +121,8 @@ for k in kmer_list:
     # keep only canonical k-mers in the fractions container
     fractions = defaultdict(dict)
     fold_change = defaultdict(dict)
+    
+    ##### Unpacks dictionary to assign library to fraction
     for _i, _j in _fractions.items():
         for _k, _l in _j.items():
             fractions[_i][canonical(_k)[0]] = _l
